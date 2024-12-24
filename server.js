@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: ["http://x-change-frontend.vercel.app", "https://x-change-zeta.vercel.app"],
+    origin: ["http://x-change-frontend.vercel.app", "http://x-change-zeta.vercel.app"],
     methods: ["GET", "POST"],
   },
 });
